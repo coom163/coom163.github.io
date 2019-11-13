@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://coom163.github.io/"/>
-  <updated>2019-11-13T13:21:25.690Z</updated>
+  <updated>2019-11-13T13:35:08.351Z</updated>
   <id>http://coom163.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://coom163.github.io/2019/11/12/an-zhuang-hexo-yi-ji-qie-huan-zhu-ti/"/>
     <id>http://coom163.github.io/2019/11/12/an-zhuang-hexo-yi-ji-qie-huan-zhu-ti/</id>
     <published>2019-11-12T11:48:14.000Z</published>
-    <updated>2019-11-13T13:21:25.690Z</updated>
+    <updated>2019-11-13T13:35:08.351Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;安装hexo以及切换主题&quot;&gt;&lt;a href=&quot;#安装hexo以及切换主题&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;本文基于mac平台完成hexo基础环境搭建，win平台仅需安装必须的软件，从第2部分开始都是通用的。&lt;/p&gt;
+&lt;h2 id=&quot;安装hexo以及切换主题&quot;&gt;&lt;a href=&quot;#安装hexo以及切换主题&quot; class=&quot;headerlink&quot;
         
       
     

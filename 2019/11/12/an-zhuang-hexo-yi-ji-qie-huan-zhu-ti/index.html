@@ -5,11 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="安装hexo以及切换主题, Hexo">
-    <meta name="description" content="安装hexo以及切换主题1、安装必须的软件本文基于mac安装需要的软件，win版可以找一下类似教程。
-mac平台有类似于linux的apt-get的命令——brew。
-0、brew
-只需要在命令行中输入下面对应的命令就可以安装brew。
- ">
+    <meta name="description" content="本文基于mac平台完成hexo基础环境搭建，win平台仅需安装必须的软件，从第2部分开始都是通用的。
+安装hexo以及切换主题1、安装必须的软件本文基于mac安装需要的软件，win版可以找一下类似教程。
+mac平台有类似于linux的apt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -464,14 +462,14 @@ mac平台有类似于linux的apt-get的命令——brew。
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    260
+                    480
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 				
@@ -487,7 +485,8 @@ mac平台有类似于linux的apt-get的命令——brew。
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="安装hexo以及切换主题"><a href="#安装hexo以及切换主题" class="headerlink" title="安装hexo以及切换主题"></a>安装hexo以及切换主题</h2><h3 id="1、安装必须的软件"><a href="#1、安装必须的软件" class="headerlink" title="1、安装必须的软件"></a>1、安装必须的软件</h3><p>本文基于mac安装需要的软件，win版可以找一下类似教程。</p>
+                <p>本文基于mac平台完成hexo基础环境搭建，win平台仅需安装必须的软件，从第2部分开始都是通用的。</p>
+<h2 id="安装hexo以及切换主题"><a href="#安装hexo以及切换主题" class="headerlink" title="安装hexo以及切换主题"></a>安装hexo以及切换主题</h2><h3 id="1、安装必须的软件"><a href="#1、安装必须的软件" class="headerlink" title="1、安装必须的软件"></a>1、安装必须的软件</h3><p>本文基于mac安装需要的软件，win版可以找一下类似教程。</p>
 <p>mac平台有类似于linux的apt-get的命令——brew。</p>
 <p>0、brew</p>
 <p>只需要在命令行中输入下面对应的命令就可以安装brew。</p>
@@ -523,7 +522,49 @@ mac平台有类似于linux的apt-get的命令——brew。
 <p>3、nodejs</p>
 <pre class=" language-bash"><code class="language-bash">brew <span class="token function">install</span> nodejs</code></pre>
 <h3 id="2、安装hexo"><a href="#2、安装hexo" class="headerlink" title="2、安装hexo"></a>2、安装hexo</h3><p>在完成上述的步骤之后，即可开始hexo的安装过程</p>
-<p>（未完待续）</p>
+<p>1、输入下面的命令，借助npm安装hexo</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</code></pre>
+<p>安装完成之后可以借助hexo -v查看hexo的版本。</p>
+<p>2、新建一个文件夹</p>
+<p>进入新建的文件夹内，执行下面的命令，创建hexo</p>
+<pre class=" language-bash"><code class="language-bash">hexo init myblog（文件夹）</code></pre>
+<p>进入刚刚init出来的文件夹，可以发现下面有以下的文件夹：</p>
+<table>
+<thead>
+<tr>
+<th>文件夹名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>node_modules</td>
+<td>依赖包</td>
+</tr>
+<tr>
+<td>public</td>
+<td>存放生成的页面</td>
+</tr>
+<tr>
+<td>scaffolds</td>
+<td>生成文章的一些模版</td>
+</tr>
+<tr>
+<td>source</td>
+<td>用来存放文章</td>
+</tr>
+<tr>
+<td>themes</td>
+<td>主题</td>
+</tr>
+<tr>
+<td>_config.yml</td>
+<td>博客的全局配置文件</td>
+</tr>
+</tbody></table>
+<p>此时，可以执行下面的命令，并访问<a href="http://localhost:4000。" target="_blank" rel="noopener">http://localhost:4000。</a></p>
+<pre class=" language-bash"><code class="language-bash">hexo g
+hexo server</code></pre>
+<p>执行到这里，hexo本地环节已经基本完成，待上传文件到github。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1056,11 +1097,9 @@ mac平台有类似于linux的apt-get的命令——brew。
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装hexo以及切换主题1、安装必须的软件本文基于mac安装需要的软件，win版可以找一下类似教程。
-mac平台有类似于linux的apt-get的命令——brew。
-0、brew
-只需要在命令行中输入下面对应的命令就可以安装brew。
- 
+                            本文基于mac平台完成hexo基础环境搭建，win平台仅需安装必须的软件，从第2部分开始都是通用的。
+安装hexo以及切换主题1、安装必须的软件本文基于mac安装需要的软件，win版可以找一下类似教程。
+mac平台有类似于linux的apt
                         
                     </div>
                     <div class="publish-info">
